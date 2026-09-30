@@ -1,0 +1,10 @@
+# Build output, reports and logs
+target/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/

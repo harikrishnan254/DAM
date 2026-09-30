@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="13" passed="8" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-30T15:48:07 IST" name="AEM DAM API - Smoke" finished-at="2026-09-30T15:48:51 IST" duration-ms="43843">
+    <groups>
+      <group name="regression">
+        <method signature="HealthCheckTest.csrfTokenIsIssued()[pri:0, instance:com.qa.aem.tests.HealthCheckTest@2ce6c6ec]" name="csrfTokenIsIssued" class="com.qa.aem.tests.HealthCheckTest"/>
+        <method signature="HealthCheckTest.invalidCredentialsAreRejected()[pri:0, instance:com.qa.aem.tests.HealthCheckTest@2ce6c6ec]" name="invalidCredentialsAreRejected" class="com.qa.aem.tests.HealthCheckTest"/>
+        <method signature="HealthCheckTest.loginPageIsReachable()[pri:0, instance:com.qa.aem.tests.HealthCheckTest@2ce6c6ec]" name="loginPageIsReachable" class="com.qa.aem.tests.HealthCheckTest"/>
+        <method signature="MetadataSearchTest.filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" name="filterByMetadata" class="com.qa.aem.tests.MetadataSearchTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="HealthCheckTest.csrfTokenIsIssued()[pri:0, instance:com.qa.aem.tests.HealthCheckTest@2ce6c6ec]" name="csrfTokenIsIssued" class="com.qa.aem.tests.HealthCheckTest"/>
+        <method signature="HealthCheckTest.invalidCredentialsAreRejected()[pri:0, instance:com.qa.aem.tests.HealthCheckTest@2ce6c6ec]" name="invalidCredentialsAreRejected" class="com.qa.aem.tests.HealthCheckTest"/>
+        <method signature="HealthCheckTest.loginPageIsReachable()[pri:0, instance:com.qa.aem.tests.HealthCheckTest@2ce6c6ec]" name="loginPageIsReachable" class="com.qa.aem.tests.HealthCheckTest"/>
+        <method signature="MetadataSearchTest.filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" name="filterByMetadata" class="com.qa.aem.tests.MetadataSearchTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-09-30T15:48:07 IST" name="Smoke" finished-at="2026-09-30T15:48:51 IST" duration-ms="43843">
+      <class name="com.qa.aem.tests.HealthCheckTest">
+        <test-method signature="csrfTokenIsIssued()[pri:0, instance:com.qa.aem.tests.HealthCheckTest@2ce6c6ec]" started-at="2026-09-30T15:48:07 IST" name="csrfTokenIsIssued" description="A valid user gets a CSRF token" finished-at="2026-09-30T15:48:10 IST" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- csrfTokenIsIssued -->
+        <test-method signature="invalidCredentialsAreRejected()[pri:0, instance:com.qa.aem.tests.HealthCheckTest@2ce6c6ec]" started-at="2026-09-30T15:48:10 IST" name="invalidCredentialsAreRejected" description="Wrong credentials are rejected with 401 Unauthorized" finished-at="2026-09-30T15:48:11 IST" duration-ms="1229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentialsAreRejected -->
+        <test-method signature="loginPageIsReachable()[pri:0, instance:com.qa.aem.tests.HealthCheckTest@2ce6c6ec]" started-at="2026-09-30T15:48:11 IST" name="loginPageIsReachable" description="The AEM login page loads within 5 seconds" finished-at="2026-09-30T15:48:12 IST" duration-ms="1202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageIsReachable -->
+      </class> <!-- com.qa.aem.tests.HealthCheckTest -->
+      <class name="com.qa.aem.tests.MetadataSearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:07 IST" name="setUp" finished-at="2026-09-30T15:48:07 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:07 IST" name="filterByMetadata" description="Filtering product assets by a metadata value returns assets that have that value" data-provider="metadataFilters" finished-at="2026-09-30T15:48:29 IST" duration-ms="21731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lcl:ims]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GS1 Ecommerce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByMetadata -->
+        <test-method signature="filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:29 IST" name="filterByMetadata" description="Filtering product assets by a metadata value returns assets that have that value" data-provider="metadataFilters" finished-at="2026-09-30T15:48:34 IST" duration-ms="5295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lcl:ims]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GS1 Marketing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByMetadata -->
+        <test-method is-config="true" signature="deleteTestFolders()[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:29 IST" name="deleteTestFolders" finished-at="2026-09-30T15:48:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTestFolders -->
+        <test-method signature="filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:34 IST" name="filterByMetadata" description="Filtering product assets by a metadata value returns assets that have that value" data-provider="metadataFilters" finished-at="2026-09-30T15:48:38 IST" duration-ms="4470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lcl:ims]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GS1 Planogram]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByMetadata -->
+        <test-method is-config="true" signature="deleteTestFolders()[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:34 IST" name="deleteTestFolders" finished-at="2026-09-30T15:48:34 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTestFolders -->
+        <test-method signature="filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:38 IST" name="filterByMetadata" description="Filtering product assets by a metadata value returns assets that have that value" data-provider="metadataFilters" finished-at="2026-09-30T15:48:43 IST" duration-ms="4746" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lcl:ims]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[GS1 Nutritional]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByMetadata -->
+        <test-method is-config="true" signature="deleteTestFolders()[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:38 IST" name="deleteTestFolders" finished-at="2026-09-30T15:48:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTestFolders -->
+        <test-method signature="filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:43 IST" name="filterByMetadata" description="Filtering product assets by a metadata value returns assets that have that value" data-provider="metadataFilters" finished-at="2026-09-30T15:48:44 IST" duration-ms="1309" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lcl:imageCategory]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[plan]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[No assets found with lcl:imageCategory = plan expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: No assets found with lcl:imageCategory = plan expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByMetadata -->
+        <test-method is-config="true" signature="deleteTestFolders()[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:43 IST" name="deleteTestFolders" finished-at="2026-09-30T15:48:43 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTestFolders -->
+        <test-method signature="filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:44 IST" name="filterByMetadata" description="Filtering product assets by a metadata value returns assets that have that value" data-provider="metadataFilters" finished-at="2026-09-30T15:48:45 IST" duration-ms="1081" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lcl:imageCategory]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mark]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[No assets found with lcl:imageCategory = mark expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: No assets found with lcl:imageCategory = mark expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByMetadata -->
+        <test-method is-config="true" signature="deleteTestFolders()[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:44 IST" name="deleteTestFolders" finished-at="2026-09-30T15:48:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTestFolders -->
+        <test-method signature="filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:45 IST" name="filterByMetadata" description="Filtering product assets by a metadata value returns assets that have that value" data-provider="metadataFilters" finished-at="2026-09-30T15:48:47 IST" duration-ms="1368" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lcl:imageCategory]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nutripanel]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[No assets found with lcl:imageCategory = nutripanel expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: No assets found with lcl:imageCategory = nutripanel expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByMetadata -->
+        <test-method is-config="true" signature="deleteTestFolders()[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:45 IST" name="deleteTestFolders" finished-at="2026-09-30T15:48:45 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTestFolders -->
+        <test-method signature="filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:47 IST" name="filterByMetadata" description="Filtering product assets by a metadata value returns assets that have that value" data-provider="metadataFilters" finished-at="2026-09-30T15:48:48 IST" duration-ms="1195" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lcl:imageCategory]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[foodingrts]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[No assets found with lcl:imageCategory = foodingrts expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: No assets found with lcl:imageCategory = foodingrts expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByMetadata -->
+        <test-method is-config="true" signature="deleteTestFolders()[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:47 IST" name="deleteTestFolders" finished-at="2026-09-30T15:48:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTestFolders -->
+        <test-method is-config="true" signature="deleteTestFolders()[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:48 IST" name="deleteTestFolders" finished-at="2026-09-30T15:48:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTestFolders -->
+        <test-method signature="filterByMetadata(java.lang.String,java.lang.String)[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:48 IST" name="filterByMetadata" description="Filtering product assets by a metadata value returns assets that have that value" data-provider="metadataFilters" finished-at="2026-09-30T15:48:51 IST" duration-ms="2590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lcl:imageCategory]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ecomm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterByMetadata -->
+        <test-method is-config="true" signature="deleteTestFolders()[pri:0, instance:com.qa.aem.tests.MetadataSearchTest@2d6c53fc]" started-at="2026-09-30T15:48:51 IST" name="deleteTestFolders" finished-at="2026-09-30T15:48:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTestFolders -->
+      </class> <!-- com.qa.aem.tests.MetadataSearchTest -->
+    </test> <!-- Smoke -->
+  </suite> <!-- AEM DAM API - Smoke -->
+</testng-results>

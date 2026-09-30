@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AEM DAM API - Smoke" parallel="classes" thread-count="3">
+
+    <listeners>
+        <listener class-name="com.qa.aem.listeners.ExtentReportListener"/>
+    </listeners>
+
+    <test name="Smoke">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qa.aem.tests.HealthCheckTest"/>
+            <class name="com.qa.aem.tests.MetadataSearchTest"/>
+        </classes>
+    </test>
+</suite>

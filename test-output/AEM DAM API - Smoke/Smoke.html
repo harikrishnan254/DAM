@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>TestNG:  Smoke</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 30 15:48:07 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>43 seconds (43843 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.aem.tests.MetadataSearchTest.filterByMetadata()'><b>filterByMetadata</b><br>Test class: com.qa.aem.tests.MetadataSearchTest<br>Test method: Filtering product assets by a metadata value returns assets that have that value<br>Parameters: lcl:imageCategory, mark</td>
+<td><div><pre>java.lang.AssertionError: No assets found with lcl:imageCategory = mark expected [false] but found [true]
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace257460188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace257460188'><pre>java.lang.AssertionError: No assets found with lcl:imageCategory = mark expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>com.qa.aem.tests.MetadataSearchTest@2d6c53fc</td></tr>
+<tr>
+<td title='com.qa.aem.tests.MetadataSearchTest.filterByMetadata()'><b>filterByMetadata</b><br>Test class: com.qa.aem.tests.MetadataSearchTest<br>Test method: Filtering product assets by a metadata value returns assets that have that value<br>Parameters: lcl:imageCategory, foodingrts</td>
+<td><div><pre>java.lang.AssertionError: No assets found with lcl:imageCategory = foodingrts expected [false] but found [true]
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1369670357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1369670357'><pre>java.lang.AssertionError: No assets found with lcl:imageCategory = foodingrts expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>com.qa.aem.tests.MetadataSearchTest@2d6c53fc</td></tr>
+<tr>
+<td title='com.qa.aem.tests.MetadataSearchTest.filterByMetadata()'><b>filterByMetadata</b><br>Test class: com.qa.aem.tests.MetadataSearchTest<br>Test method: Filtering product assets by a metadata value returns assets that have that value<br>Parameters: lcl:imageCategory, plan</td>
+<td><div><pre>java.lang.AssertionError: No assets found with lcl:imageCategory = plan expected [false] but found [true]
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1729792467", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1729792467'><pre>java.lang.AssertionError: No assets found with lcl:imageCategory = plan expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>com.qa.aem.tests.MetadataSearchTest@2d6c53fc</td></tr>
+<tr>
+<td title='com.qa.aem.tests.MetadataSearchTest.filterByMetadata()'><b>filterByMetadata</b><br>Test class: com.qa.aem.tests.MetadataSearchTest<br>Test method: Filtering product assets by a metadata value returns assets that have that value<br>Parameters: lcl:imageCategory, nutripanel</td>
+<td><div><pre>java.lang.AssertionError: No assets found with lcl:imageCategory = nutripanel expected [false] but found [true]
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace735634807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace735634807'><pre>java.lang.AssertionError: No assets found with lcl:imageCategory = nutripanel expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>com.qa.aem.tests.MetadataSearchTest@2d6c53fc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.aem.tests.MetadataSearchTest.filterByMetadata()'><b>filterByMetadata</b><br>Test class: com.qa.aem.tests.MetadataSearchTest<br>Test method: Filtering product assets by a metadata value returns assets that have that value<br>Parameters: lcl:ims, GS1 Marketing</td>
+<td></td>
+<td>5</td>
+<td>com.qa.aem.tests.MetadataSearchTest@2d6c53fc</td></tr>
+<tr>
+<td title='com.qa.aem.tests.MetadataSearchTest.filterByMetadata()'><b>filterByMetadata</b><br>Test class: com.qa.aem.tests.MetadataSearchTest<br>Test method: Filtering product assets by a metadata value returns assets that have that value<br>Parameters: lcl:imageCategory, ecomm</td>
+<td></td>
+<td>2</td>
+<td>com.qa.aem.tests.MetadataSearchTest@2d6c53fc</td></tr>
+<tr>
+<td title='com.qa.aem.tests.MetadataSearchTest.filterByMetadata()'><b>filterByMetadata</b><br>Test class: com.qa.aem.tests.MetadataSearchTest<br>Test method: Filtering product assets by a metadata value returns assets that have that value<br>Parameters: lcl:ims, GS1 Nutritional</td>
+<td></td>
+<td>4</td>
+<td>com.qa.aem.tests.MetadataSearchTest@2d6c53fc</td></tr>
+<tr>
+<td title='com.qa.aem.tests.HealthCheckTest.csrfTokenIsIssued()'><b>csrfTokenIsIssued</b><br>Test class: com.qa.aem.tests.HealthCheckTest<br>Test method: A valid user gets a CSRF token</td>
+<td></td>
+<td>3</td>
+<td>com.qa.aem.tests.HealthCheckTest@2ce6c6ec</td></tr>
+<tr>
+<td title='com.qa.aem.tests.HealthCheckTest.invalidCredentialsAreRejected()'><b>invalidCredentialsAreRejected</b><br>Test class: com.qa.aem.tests.HealthCheckTest<br>Test method: Wrong credentials are rejected with 401 Unauthorized</td>
+<td></td>
+<td>1</td>
+<td>com.qa.aem.tests.HealthCheckTest@2ce6c6ec</td></tr>
+<tr>
+<td title='com.qa.aem.tests.HealthCheckTest.loginPageIsReachable()'><b>loginPageIsReachable</b><br>Test class: com.qa.aem.tests.HealthCheckTest<br>Test method: The AEM login page loads within 5 seconds</td>
+<td></td>
+<td>1</td>
+<td>com.qa.aem.tests.HealthCheckTest@2ce6c6ec</td></tr>
+<tr>
+<td title='com.qa.aem.tests.MetadataSearchTest.filterByMetadata()'><b>filterByMetadata</b><br>Test class: com.qa.aem.tests.MetadataSearchTest<br>Test method: Filtering product assets by a metadata value returns assets that have that value<br>Parameters: lcl:ims, GS1 Ecommerce</td>
+<td></td>
+<td>21</td>
+<td>com.qa.aem.tests.MetadataSearchTest@2d6c53fc</td></tr>
+<tr>
+<td title='com.qa.aem.tests.MetadataSearchTest.filterByMetadata()'><b>filterByMetadata</b><br>Test class: com.qa.aem.tests.MetadataSearchTest<br>Test method: Filtering product assets by a metadata value returns assets that have that value<br>Parameters: lcl:ims, GS1 Planogram</td>
+<td></td>
+<td>4</td>
+<td>com.qa.aem.tests.MetadataSearchTest@2d6c53fc</td></tr>
+</table><p>
+</body>
+</html>

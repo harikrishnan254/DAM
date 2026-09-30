@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "QueryBuilder response",
+  "type": "object",
+  "required": ["success", "total", "hits"],
+  "properties": {
+    "success": { "type": "boolean" },
+    "total": { "type": "integer" },
+    "hits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["jcr:path"],
+        "properties": {
+          "jcr:path": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Failed suite [AEM DAM API - Smoke]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.aem.listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="3" parallel="classes" name="Smoke(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.qa.aem.tests.MetadataSearchTest">
+        <methods>
+          <include name="deleteTestFolders"/>
+          <include name="filterByMetadata" invocation-numbers="4 5 6 7"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.aem.tests.MetadataSearchTest -->
+    </classes>
+  </test> <!-- Smoke(failed) -->
+</suite> <!-- Failed suite [AEM DAM API - Smoke] -->

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AEM_DAM_API___Smoke" class="navigator-link">
+              <span class="suite-name border-failed">AEM DAM API - Smoke</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AEM_DAM_API___Smoke" class="navigator-link ">
+                    <span>C:\Users\Harish\Downloads\APIFramework\aem-api-framework\src\test\resources\suites\smoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AEM_DAM_API___Smoke" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AEM_DAM_API___Smoke" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AEM_DAM_API___Smoke" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AEM_DAM_API___Smoke" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AEM_DAM_API___Smoke" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AEM_DAM_API___Smoke" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 4 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AEM_DAM_API___Smoke" class="hide-methods failed suite-AEM_DAM_API___Smoke"> (hide)</a> <!-- hide-methods failed suite-AEM_DAM_API___Smoke -->
+                      <a href="#" panel-name="suite-AEM_DAM_API___Smoke" class="show-methods failed suite-AEM_DAM_API___Smoke"> (show)</a> <!-- show-methods failed suite-AEM_DAM_API___Smoke -->
+                    </span>
+                    <div class="method-list-content failed suite-AEM_DAM_API___Smoke">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.MetadataSearchTest" class="method navigator-link" hash-for-method="filterByMetadata(lcl:imageCategory, mark)">filterByMetadata(lcl:imageCategory, mark)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.MetadataSearchTest" class="method navigator-link" hash-for-method="filterByMetadata(lcl:imageCategory, foodingrts)">filterByMetadata(lcl:imageCategory, foodingrts)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.MetadataSearchTest" class="method navigator-link" hash-for-method="filterByMetadata(lcl:imageCategory, plan)">filterByMetadata(lcl:imageCategory, plan)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.MetadataSearchTest" class="method navigator-link" hash-for-method="filterByMetadata(lcl:imageCategory, nutripanel)">filterByMetadata(lcl:imageCategory, nutripanel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AEM_DAM_API___Smoke -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AEM_DAM_API___Smoke" class="hide-methods passed suite-AEM_DAM_API___Smoke"> (hide)</a> <!-- hide-methods passed suite-AEM_DAM_API___Smoke -->
+                      <a href="#" panel-name="suite-AEM_DAM_API___Smoke" class="show-methods passed suite-AEM_DAM_API___Smoke"> (show)</a> <!-- show-methods passed suite-AEM_DAM_API___Smoke -->
+                    </span>
+                    <div class="method-list-content passed suite-AEM_DAM_API___Smoke">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.HealthCheckTest" class="method navigator-link" hash-for-method="csrfTokenIsIssued">csrfTokenIsIssued</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.MetadataSearchTest" class="method navigator-link" hash-for-method="filterByMetadata(lcl:ims, GS1 Marketing)">filterByMetadata(lcl:ims, GS1 Marketing)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.MetadataSearchTest" class="method navigator-link" hash-for-method="filterByMetadata(lcl:imageCategory, ecomm)">filterByMetadata(lcl:imageCategory, ecomm)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.MetadataSearchTest" class="method navigator-link" hash-for-method="filterByMetadata(lcl:ims, GS1 Nutritional)">filterByMetadata(lcl:ims, GS1 Nutritional)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.MetadataSearchTest" class="method navigator-link" hash-for-method="filterByMetadata(lcl:ims, GS1 Ecommerce)">filterByMetadata(lcl:ims, GS1 Ecommerce)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.MetadataSearchTest" class="method navigator-link" hash-for-method="filterByMetadata(lcl:ims, GS1 Planogram)">filterByMetadata(lcl:ims, GS1 Planogram)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.HealthCheckTest" class="method navigator-link" hash-for-method="invalidCredentialsAreRejected">invalidCredentialsAreRejected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AEM_DAM_API___Smoke" title="com.qa.aem.tests.HealthCheckTest" class="method navigator-link" hash-for-method="loginPageIsReachable">loginPageIsReachable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AEM_DAM_API___Smoke -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AEM_DAM_API___Smoke" class="panel AEM_DAM_API___Smoke">
+          <div class="suite-AEM_DAM_API___Smoke-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.aem.tests.MetadataSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterByMetadata(lcl:imageCategory, mark)">
+                  </a> <!-- filterByMetadata(lcl:imageCategory, mark) -->
+                  <span class="method-name">filterByMetadata</span>
+                  <span class="parameters">(lcl:imageCategory,mark)</span>
+                  <div class="stack-trace">java.lang.AssertionError: No assets found with lcl:imageCategory = mark expected [false] but found [true]
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Filtering product assets by a metadata value returns assets that have that value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterByMetadata(lcl:imageCategory, foodingrts)">
+                  </a> <!-- filterByMetadata(lcl:imageCategory, foodingrts) -->
+                  <span class="method-name">filterByMetadata</span>
+                  <span class="parameters">(lcl:imageCategory,foodingrts)</span>
+                  <div class="stack-trace">java.lang.AssertionError: No assets found with lcl:imageCategory = foodingrts expected [false] but found [true]
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Filtering product assets by a metadata value returns assets that have that value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterByMetadata(lcl:imageCategory, plan)">
+                  </a> <!-- filterByMetadata(lcl:imageCategory, plan) -->
+                  <span class="method-name">filterByMetadata</span>
+                  <span class="parameters">(lcl:imageCategory,plan)</span>
+                  <div class="stack-trace">java.lang.AssertionError: No assets found with lcl:imageCategory = plan expected [false] but found [true]
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Filtering product assets by a metadata value returns assets that have that value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterByMetadata(lcl:imageCategory, nutripanel)">
+                  </a> <!-- filterByMetadata(lcl:imageCategory, nutripanel) -->
+                  <span class="method-name">filterByMetadata</span>
+                  <span class="parameters">(lcl:imageCategory,nutripanel)</span>
+                  <div class="stack-trace">java.lang.AssertionError: No assets found with lcl:imageCategory = nutripanel expected [false] but found [true]
+	at com.qa.aem.tests.MetadataSearchTest.filterByMetadata(MetadataSearchTest.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Filtering product assets by a metadata value returns assets that have that value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AEM_DAM_API___Smoke-class-failed -->
+          <div class="suite-AEM_DAM_API___Smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.aem.tests.HealthCheckTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="csrfTokenIsIssued">
+                  </a> <!-- csrfTokenIsIssued -->
+                  <span class="method-name">csrfTokenIsIssued</span>
+                  <em>
+(A valid user gets a CSRF token)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentialsAreRejected">
+                  </a> <!-- invalidCredentialsAreRejected -->
+                  <span class="method-name">invalidCredentialsAreRejected</span>
+                  <em>
+(Wrong credentials are rejected with 401 Unauthorized)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPageIsReachable">
+                  </a> <!-- loginPageIsReachable -->
+                  <span class="method-name">loginPageIsReachable</span>
+                  <em>
+(The AEM login page loads within 5 seconds)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AEM_DAM_API___Smoke-class-passed -->
+          <div class="suite-AEM_DAM_API___Smoke-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.aem.tests.MetadataSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterByMetadata(lcl:ims, GS1 Marketing)">
+                  </a> <!-- filterByMetadata(lcl:ims, GS1 Marketing) -->
+                  <span class="method-name">filterByMetadata</span>
+                  <span class="parameters">(lcl:ims,GS1 Marketing)</span>
+                  <em>
+(Filtering product assets by a metadata value returns assets that have that value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterByMetadata(lcl:imageCategory, ecomm)">
+                  </a> <!-- filterByMetadata(lcl:imageCategory, ecomm) -->
+                  <span class="method-name">filterByMetadata</span>
+                  <span class="parameters">(lcl:imageCategory,ecomm)</span>
+                  <em>
+(Filtering product assets by a metadata value returns assets that have that value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterByMetadata(lcl:ims, GS1 Nutritional)">
+                  </a> <!-- filterByMetadata(lcl:ims, GS1 Nutritional) -->
+                  <span class="method-name">filterByMetadata</span>
+                  <span class="parameters">(lcl:ims,GS1 Nutritional)</span>
+                  <em>
+(Filtering product assets by a metadata value returns assets that have that value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterByMetadata(lcl:ims, GS1 Ecommerce)">
+                  </a> <!-- filterByMetadata(lcl:ims, GS1 Ecommerce) -->
+                  <span class="method-name">filterByMetadata</span>
+                  <span class="parameters">(lcl:ims,GS1 Ecommerce)</span>
+                  <em>
+(Filtering product assets by a metadata value returns assets that have that value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterByMetadata(lcl:ims, GS1 Planogram)">
+                  </a> <!-- filterByMetadata(lcl:ims, GS1 Planogram) -->
+                  <span class="method-name">filterByMetadata</span>
+                  <span class="parameters">(lcl:ims,GS1 Planogram)</span>
+                  <em>
+(Filtering product assets by a metadata value returns assets that have that value)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AEM_DAM_API___Smoke-class-passed -->
+        </div> <!-- panel AEM_DAM_API___Smoke -->
+        <div panel-name="test-xml-AEM_DAM_API___Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Harish\Downloads\APIFramework\aem-api-framework\src\test\resources\suites\smoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;AEM DAM API - Smoke&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.aem.listeners.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;classes&quot; name=&quot;Smoke&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.aem.tests.HealthCheckTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.aem.tests.MetadataSearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke --&gt;
+&lt;/suite&gt; &lt;!-- AEM DAM API - Smoke --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AEM_DAM_API___Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AEM DAM API - Smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AEM_DAM_API___Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AEM DAM API - Smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">csrfTokenIsIssued</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">filterByMetadata</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidCredentialsAreRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginPageIsReachable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">csrfTokenIsIssued</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">filterByMetadata</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidCredentialsAreRejected</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginPageIsReachable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AEM_DAM_API___Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AEM DAM API - Smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AEM_DAM_API___Smoke');
+function tableData_AEM_DAM_API___Smoke() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'filterByMetadata')
+data.setCell(0, 2, 'com.qa.aem.tests.MetadataSearchTest')
+data.setCell(0, 3, 21731);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'filterByMetadata')
+data.setCell(1, 2, 'com.qa.aem.tests.MetadataSearchTest')
+data.setCell(1, 3, 5295);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'filterByMetadata')
+data.setCell(2, 2, 'com.qa.aem.tests.MetadataSearchTest')
+data.setCell(2, 3, 4746);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'filterByMetadata')
+data.setCell(3, 2, 'com.qa.aem.tests.MetadataSearchTest')
+data.setCell(3, 3, 4470);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'csrfTokenIsIssued')
+data.setCell(4, 2, 'com.qa.aem.tests.HealthCheckTest')
+data.setCell(4, 3, 3104);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'filterByMetadata')
+data.setCell(5, 2, 'com.qa.aem.tests.MetadataSearchTest')
+data.setCell(5, 3, 2590);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'filterByMetadata')
+data.setCell(6, 2, 'com.qa.aem.tests.MetadataSearchTest')
+data.setCell(6, 3, 1368);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'filterByMetadata')
+data.setCell(7, 2, 'com.qa.aem.tests.MetadataSearchTest')
+data.setCell(7, 3, 1309);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'invalidCredentialsAreRejected')
+data.setCell(8, 2, 'com.qa.aem.tests.HealthCheckTest')
+data.setCell(8, 3, 1229);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginPageIsReachable')
+data.setCell(9, 2, 'com.qa.aem.tests.HealthCheckTest')
+data.setCell(9, 3, 1202);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'filterByMetadata')
+data.setCell(10, 2, 'com.qa.aem.tests.MetadataSearchTest')
+data.setCell(10, 3, 1195);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'filterByMetadata')
+data.setCell(11, 2, 'com.qa.aem.tests.MetadataSearchTest')
+data.setCell(11, 3, 1081);
+window.suiteTableData['AEM_DAM_API___Smoke']= { tableData: data, tableDiv: 'times-div-AEM_DAM_API___Smoke'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 49 seconds</span>
+              <div id="times-div-AEM_DAM_API___Smoke">
+              </div> <!-- times-div-AEM_DAM_API___Smoke -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AEM_DAM_API___Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AEM DAM API - Smoke</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AEM_DAM_API___Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.aem.tests.MetadataSearchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">filterWithUnknownValue</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AEM_DAM_API___Smoke" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.aem.tests.MetadataSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.aem.tests.HealthCheckTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">csrfTokenIsIssued</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.aem.tests.MetadataSearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">filterByMetadata(lcl:ims, GS1 Ecommerce)</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.aem.tests.HealthCheckTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">invalidCredentialsAreRejected</span>
+                <span class="method-start">3118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginPageIsReachable</span>
+                <span class="method-start">4347 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.aem.tests.MetadataSearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">filterByMetadata(lcl:ims, GS1 Marketing)</span>
+                <span class="method-start">21757 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteTestFolders</span>
+                <span class="method-start">21757 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteTestFolders</span>
+                <span class="method-start">27053 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">filterByMetadata(lcl:ims, GS1 Planogram)</span>
+                <span class="method-start">27053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">filterByMetadata(lcl:ims, GS1 Nutritional)</span>
+                <span class="method-start">31524 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteTestFolders</span>
+                <span class="method-start">31524 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">filterByMetadata(lcl:imageCategory, plan)</span>
+                <span class="method-start">36272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteTestFolders</span>
+                <span class="method-start">36272 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">filterByMetadata(lcl:imageCategory, mark)</span>
+                <span class="method-start">37584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteTestFolders</span>
+                <span class="method-start">37584 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteTestFolders</span>
+                <span class="method-start">38666 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">filterByMetadata(lcl:imageCategory, nutripanel)</span>
+                <span class="method-start">38666 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">filterByMetadata(lcl:imageCategory, foodingrts)</span>
+                <span class="method-start">40034 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteTestFolders</span>
+                <span class="method-start">40034 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteTestFolders</span>
+                <span class="method-start">41229 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">filterByMetadata(lcl:imageCategory, ecomm)</span>
+                <span class="method-start">41230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteTestFolders</span>
+                <span class="method-start">43820 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
